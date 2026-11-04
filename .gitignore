@@ -1,0 +1,9 @@
+.gradle/
+**/build/
+local.properties
+*.keystore
+*.jks
+*.pk8
+*.pem
+node_modules/
+qa-output/

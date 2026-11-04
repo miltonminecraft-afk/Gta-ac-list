@@ -1,0 +1,464 @@
+{
+  "schema": 1,
+  "updatedAt": "2026-11-04T01:00:04.000+01:00",
+  "updatedLabel": "4 november · 01:00",
+  "scope": "Actuele verbeteringen en oplevering; geen percentage van alle historische projectwerkzaamheden.",
+  "deltaLabel": "2 punten toegevoegd · 0 hele taken nieuw opgeleverd",
+  "updates": [
+    {
+      "finished": false,
+      "title": "FPS-daling van circa 80 naar 47 gemeld",
+      "detail": "Doorgestuurd naar de hoofdchat voor een vergelijking onder gelijke omstandigheden. Oorzaak en herstel zijn nog niet bewezen."
+    },
+    {
+      "finished": false,
+      "title": "Head bobbing uitschakelen toegevoegd",
+      "detail": "Nieuwe camerataak na het huidige spiegelwerk; echte kijkbesturing en latere headsetbeweging behouden. Nu 11 actuele werkpakketten."
+    },
+    {
+      "finished": false,
+      "title": "Extra prestatiecontrole bij spiegels",
+      "detail": "Dezelfde 3 controles zijn bewezen; met de extra controle wordt dit 3/9 (33%) in plaats van 3/8 (38%). Dit is een scopewijziging, geen verlies van bewezen werk. Overige taakstanden zijn overgenomen van de vorige controle."
+    }
+  ],
+  "backlog": [
+    {
+      "title": "Starten, afsluiten en lange sessies",
+      "status": "Deels bewezen",
+      "detail": "Normale desktopstart eerder getest; GTA-afsluithang en bredere crash-/duuracceptatie blijven open."
+    },
+    {
+      "title": "Simbediening, koppeling, H-pook en FFB",
+      "status": "Open acceptatie",
+      "detail": "Werkende bediening behouden; fysieke kracht, trillingsgedrag en herstel na wissels niet als volledig geaccepteerd tellen."
+    },
+    {
+      "title": "Naadloos in-/uitstappen en voertuigwisselen",
+      "status": "Deels bewezen",
+      "detail": "Native overnames bestaan; alle modellen, gedwongen uitstap en volledige lifecycle moeten blijven kloppen."
+    },
+    {
+      "title": "Volledige wereld en laden zonder haperingen",
+      "status": "Open",
+      "detail": "Los Santos/Blaine County, offroad, muren en curbs; korte lokale ritten bewijzen geen volledige dekking."
+    },
+    {
+      "title": "AI-botsingen, ontwijken en doorrollen",
+      "status": "Open",
+      "detail": "Geen terugspringende baanwagens bij voetgangers/geparkeerde auto's; correcte dynamische overdracht."
+    },
+    {
+      "title": "Monza-pitgedrag, verkeer en circuitraces",
+      "status": "Deels bewezen",
+      "detail": "Native AC-AI rijdt; volledige pit-/aanvulcyclus en GTA→AC-racestartoverdracht blijven aparte eisen."
+    },
+    {
+      "title": "Wapens, NPC’s en Wasted/Busted",
+      "status": "Deels bewezen",
+      "detail": "Echte native projectielproeven bestaan; vloercontact, refill en volledige gameplayacceptatie volgen bewijs per geval."
+    },
+    {
+      "title": "Ambulances, marshals, takelen en waarschuwingen",
+      "status": "Op de lijst",
+      "detail": "Fysiek vrije toegang én echte GTA-hulpdienstlogica moeten samen worden opgeleverd."
+    },
+    {
+      "title": "Voertuigen, animaties, dashboards en audio",
+      "status": "Deels bewezen",
+      "detail": "Behoud de werkende auto's; gehele gevraagde vierwielige vloot en alle animatie-/geluidsdetails blijven te controleren."
+    },
+    {
+      "title": "Quest 3 VR",
+      "status": "Voorbereid",
+      "detail": "Einddoel blijft VR met rijden, lopen en instappen; stereo, spiegels, controllers en fysieke acceptatie zijn nog open."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "mirrors",
+      "title": "Spiegels betrouwbaar en vloeiend",
+      "owner": "Hoofdchat",
+      "status": "active",
+      "current": "Beeldvolgorde en GPU-herstel zijn in beperkte proeven gecontroleerd. De ontbrekende hemel en kleur worden nu aangepakt. Gebruiker meldt circa 47 FPS tegenover eerder ongeveer 80; mogelijke regressie, nog niet vergelijkbaar gemeten.",
+      "next": "Kleur/hemel en beweging controleren; de gemelde FPS-daling onder dezelfde omstandigheden onderzoeken.",
+      "checks": [
+        {
+          "label": "Vergelijkbare FPS-meting zonder framegeneratie vastgelegd",
+          "state": "done"
+        },
+        {
+          "label": "Geen oudere beelden in de korte gekoppelde rijproef",
+          "state": "done"
+        },
+        {
+          "label": "5080-fallback en terugkeer naar 5060 gecontroleerd",
+          "state": "done"
+        },
+        {
+          "label": "Hemel en kleur kloppen zonder voorgrond te bedekken",
+          "state": "doing"
+        },
+        {
+          "label": "Zichtbare vloeiendheid tijdens normaal rijden geaccepteerd",
+          "state": "open"
+        },
+        {
+          "label": "Langere proef en in-/uitstappen zonder spiegeluitval",
+          "state": "open"
+        },
+        {
+          "label": "Gemelde FPS-daling vergelijkbaar onderzocht en een eventuele regressie hersteld",
+          "state": "open"
+        },
+        {
+          "label": "Relevante bestaande gameplay blijft werken",
+          "state": "open"
+        },
+        {
+          "label": "Geïntegreerd en bewezen via de normale bureaubladstart",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": "tunnels",
+      "title": "Twee tunnels voor vrachtwagens met oplegger",
+      "owner": "Mapchat",
+      "status": "active",
+      "current": "Een langer tracé en twee structurele conceptbuizen zijn gebouwd. De bestaande GTA-weg is ter plaatse steil; de aansluiting is nog niet uitgewerkt.",
+      "next": "Wegovergang en tunnelmonden uitwerken, daarna de echte voertuigruimte in 3D controleren.",
+      "checks": [
+        {
+          "label": "Langer lengteprofiel onder het circuit doorgerekend",
+          "state": "done"
+        },
+        {
+          "label": "Twee conceptbuizen van 7 × 6 m gebouwd",
+          "state": "done"
+        },
+        {
+          "label": "Tunnelmonden en vloeiende aansluiting op de GTA-weg",
+          "state": "doing"
+        },
+        {
+          "label": "Volledige 3D-ruimte voor vrachtwagen en oplegger bewezen",
+          "state": "open"
+        },
+        {
+          "label": "Gelijke zichtbare geometrie en GTA-/AC-collision geëxporteerd",
+          "state": "open"
+        },
+        {
+          "label": "Heen en terug gereden in de gecombineerde game",
+          "state": "open"
+        },
+        {
+          "label": "Bestaande baan, pit en routes blijven intact",
+          "state": "open"
+        },
+        {
+          "label": "Geïntegreerd en beschikbaar in de gewone spelstart",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": "terrain",
+      "title": "Terrein en weghoogtes rond Monza",
+      "owner": "Mapchat",
+      "status": "prepared",
+      "current": "Kandidaat r8 is offline gecontroleerd. Hij is nog niet geïnstalleerd of in-game geaccepteerd.",
+      "next": "30 meetbeperkingen en 245 bestaande hoogteverschillen langs de relevante routes beoordelen.",
+      "checks": [
+        {
+          "label": "Beeld en beide collisionvarianten uit dezelfde brongeometrie",
+          "state": "done"
+        },
+        {
+          "label": "Alle 240 geëxporteerde terreintegels teruggelezen",
+          "state": "done"
+        },
+        {
+          "label": "7.490 nieuwe terreinaansluitingen gecontroleerd",
+          "state": "done"
+        },
+        {
+          "label": "Open bronstappen en meetbeperkingen afgehandeld",
+          "state": "open"
+        },
+        {
+          "label": "Te voet en met voertuigen in-game gecontroleerd",
+          "state": "open"
+        },
+        {
+          "label": "Geïntegreerd zonder verlies van bestaande vloeren/routes",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": "access",
+      "title": "Echte doorgang pit ↔ parkeren",
+      "owner": "Mapchat",
+      "status": "prepared",
+      "current": "De bestaande objectplaatsingen zijn geïnventariseerd. Een daadwerkelijk bruikbare nieuwe hekopening is nog niet bewezen.",
+      "next": "De exacte hek- en collisionsegmenten van de bedoelde doorgangen afwerken.",
+      "checks": [
+        {
+          "label": "Werkelijke plaatsingen van circuitobjecten geïnventariseerd",
+          "state": "done"
+        },
+        {
+          "label": "Bedoelde hekopeningen en op-/afritten gebouwd",
+          "state": "open"
+        },
+        {
+          "label": "Geen onzichtbare vaste GTA- of AC-blokkades",
+          "state": "open"
+        },
+        {
+          "label": "Te voet en met voertuigen daadwerkelijk gepasseerd",
+          "state": "open"
+        },
+        {
+          "label": "Geïntegreerd met behoud van baan en bedoelde vangrails",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": "foam",
+      "title": "Schuimblokken bocht 1 kunnen wegrollen",
+      "owner": "Beide chats",
+      "status": "prepared",
+      "current": "Acht rood-witte panelen zijn geïdentificeerd. De vaste plaatsingsdelta is apart voorbereid; losse objecten en samenvoeging moeten nog volgen.",
+      "next": "Losse GTA-objecten combineren met het weghalen van de corresponderende vaste collision.",
+      "checks": [
+        {
+          "label": "De acht bedoelde vaste panelen geïdentificeerd",
+          "state": "done"
+        },
+        {
+          "label": "Vaste plaatsingsdelta en lokale collisioncontrole voorbereid",
+          "state": "done"
+        },
+        {
+          "label": "Losse botsbare GTA-objecten toegevoegd",
+          "state": "open"
+        },
+        {
+          "label": "Geen achterblijvende vaste AC-/GTA-dubbelcollision",
+          "state": "open"
+        },
+        {
+          "label": "Verschuiven en rollen door echte botsingen getest",
+          "state": "open"
+        },
+        {
+          "label": "Samen geïntegreerd in de gewone gebruikersversie",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": "parking",
+      "title": "Parkeergarage en parkeervakken berijdbaar",
+      "owner": "Mapchat",
+      "status": "queued",
+      "current": "Verzoek doorgestuurd: garageoprit moet op de grond aansluiten; plaatsing op basis van de palen geeft nu een verkeerde rijhoogte.",
+      "next": "Werkelijke rijvloer, oprit en bestaande parkeervlakken op de juiste hoogte leggen.",
+      "checks": [
+        {
+          "label": "Garage-/opritplaatsing en aansluiting op terrein gecorrigeerd",
+          "state": "open"
+        },
+        {
+          "label": "Zichtbare vloeren en beide collisionvarianten komen overeen",
+          "state": "open"
+        },
+        {
+          "label": "In-/uitrijden, hellingen en parkeren in-game getest",
+          "state": "open"
+        },
+        {
+          "label": "Geïntegreerd zonder bestaande onderdelen te beschadigen",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": "headbob",
+      "title": "Head bobbing uit voor een stabiele camera",
+      "owner": "Hoofdchat",
+      "status": "queued",
+      "current": "Gebruikerswens doorgestuurd: kunstmatige hoofd-/camerabeweging uitschakelen, met het oog op stabiel beeld en latere VR.",
+      "next": "Na het huidige spiegelpakket de actieve bron van head bobbing vaststellen en de bedoelde camera’s controleren.",
+      "checks": [
+        {
+          "label": "Kunstmatige head bobbing in de bedoelde camera’s uitgeschakeld",
+          "state": "open"
+        },
+        {
+          "label": "Kijkbesturing en in-/uitstapovergangen blijven correct werken",
+          "state": "open"
+        },
+        {
+          "label": "Stabiliteit tijdens lopen en rijden in-game gecontroleerd",
+          "state": "open"
+        },
+        {
+          "label": "Geïntegreerd in de normale start; latere echte VR-tracking blijft mogelijk",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": "hud",
+      "title": "Eén compacte debugbalk links",
+      "owner": "Hoofdchat",
+      "status": "queued",
+      "current": "Opdracht doorgestuurd: alle waarden bij elkaar, rode/oranje tekst en geen achtergrond. Eerst het spiegelwerk afronden.",
+      "next": "Bestaande HUD-informatie in één compacte groep samenbrengen.",
+      "checks": [
+        {
+          "label": "Eén compacte groep links, zonder achtergrond",
+          "state": "open"
+        },
+        {
+          "label": "Rode/oranje tekst met leesbare labels",
+          "state": "open"
+        },
+        {
+          "label": "Alle bestaande FPS-/GPU-/temperatuurwaarden blijven verversen",
+          "state": "open"
+        },
+        {
+          "label": "In-game gecontroleerd en geïntegreerd",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": "radar",
+      "title": "Minimap, grote kaart en Monza-legenda",
+      "owner": "Beide chats",
+      "status": "queued",
+      "current": "Wegen, racebaan en nieuwe aansluitingen moeten zichtbaar overeenkomen met de wereld. Legenda: Monza, categorie Racebaan.",
+      "next": "Kaartgeometrie en GTA-legenda samen voorbereiden na de huidige taken.",
+      "checks": [
+        {
+          "label": "Minimap en grote kaart tonen de werkelijke wegen en aansluitingen",
+          "state": "open"
+        },
+        {
+          "label": "Monza staat zichtbaar in de legenda onder Racebaan",
+          "state": "open"
+        },
+        {
+          "label": "Ligging en meerdere zoomniveaus in-game gecontroleerd",
+          "state": "open"
+        },
+        {
+          "label": "Bestaande kaartfuncties behouden en gewone start gecontroleerd",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": "release",
+      "title": "Alles samen in de normale spelstart",
+      "owner": "Hoofdchat",
+      "status": "waiting",
+      "current": "De gewone bureaubladknop wees bij de governorcontrole nog naar de eerder bewezen Y-versie. Nieuwe proeven zijn niet automatisch geleverd.",
+      "next": "De werkende nieuwe onderdelen in de actuele combinatie opnemen zodra de huidige taken klaar zijn.",
+      "checks": [
+        {
+          "label": "Alle bedoelde nieuwe versies en afhankelijkheden correct gecombineerd",
+          "state": "open"
+        },
+        {
+          "label": "Volledige startcontrole met de echte PowerShell-host geslaagd",
+          "state": "open"
+        },
+        {
+          "label": "Werkelijke start via jouw bureaubladknop getest",
+          "state": "open"
+        },
+        {
+          "label": "Bestaande functies, Story mode en herstel blijven werken",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "id": "views",
+      "title": "Eindbeelden hier: meerdere hoeken + eagle eye",
+      "owner": "Mapchat → governor",
+      "status": "waiting",
+      "current": "Definitieve beelden volgen na integratie en tests van de map. Eerdere previews tellen niet als eindresultaat.",
+      "next": "Na afronding echte opnames maken van exact de geleverde versie.",
+      "checks": [
+        {
+          "label": "Definitieve geïntegreerde map is in-game gecontroleerd",
+          "state": "open"
+        },
+        {
+          "label": "Eagle-eye-overzicht en meerdere schuine hoeken opgenomen",
+          "state": "open"
+        },
+        {
+          "label": "Details van tunnels, garage, doorgangen en kaart/legenda opgenomen",
+          "state": "open"
+        },
+        {
+          "label": "Beeldset met bijschriften hier aan jou getoond",
+          "state": "open"
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "updatedAt": "2026-11-04T00:49:00+01:00",
+      "deltaLabel": "Eerste stand · 0 hele taken nieuw opgeleverd",
+      "updates": [
+        {
+          "finished": true,
+          "title": "Gekoppelde spiegelrijproef geslaagd",
+          "detail": "GTA volgde AC over 172,5 m tot 57,9 km/u; geen gemeten terugkeer naar oudere spiegelbeelden. Kleur en zichtbare vloeiendheid blijven open."
+        },
+        {
+          "finished": true,
+          "title": "Terugschakelen en herstel tussen GPU’s gecontroleerd",
+          "detail": "De 5080-fallback en terugkeer naar de 5060 bleven beelden leveren. Dit bewijst nog geen langdurige stabiliteit of FPS-winst."
+        },
+        {
+          "finished": false,
+          "title": "Twee tunnelbuizen als concept gebouwd",
+          "detail": "7 m breed en 6 m hoog. Wegovergang, tunnelmonden, game-export en de echte vrachtwagenproef ontbreken nog."
+        }
+      ]
+    },
+    {
+      "updatedAt": "2026-11-04T01:00:04.000+01:00",
+      "deltaLabel": "2 punten toegevoegd · 0 hele taken nieuw opgeleverd",
+      "updates": [
+        {
+          "finished": false,
+          "title": "FPS-daling van circa 80 naar 47 gemeld",
+          "detail": "Doorgestuurd naar de hoofdchat voor een vergelijking onder gelijke omstandigheden. Oorzaak en herstel zijn nog niet bewezen."
+        },
+        {
+          "finished": false,
+          "title": "Head bobbing uitschakelen toegevoegd",
+          "detail": "Nieuwe camerataak na het huidige spiegelwerk; echte kijkbesturing en latere headsetbeweging behouden. Nu 11 actuele werkpakketten."
+        },
+        {
+          "finished": false,
+          "title": "Extra prestatiecontrole bij spiegels",
+          "detail": "Dezelfde 3 controles zijn bewezen; met de extra controle wordt dit 3/9 (33%) in plaats van 3/8 (38%). Dit is een scopewijziging, geen verlies van bewezen werk. Overige taakstanden zijn overgenomen van de vorige controle."
+        }
+      ]
+    }
+  ]
+}
