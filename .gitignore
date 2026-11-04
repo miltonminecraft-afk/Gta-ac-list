@@ -5,6 +5,9 @@ local.properties
 *.jks
 *.pk8
 *.pem
+*.p12
+*.pfx
+*.dpapi
 node_modules/
 qa-output/
 runtime-local.json
