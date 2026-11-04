@@ -55,9 +55,17 @@ jobs:
             adb install app/build/outputs/apk/debug/app-debug.apk
             adb install app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
             adb shell am instrument -w nl.gtaac.governor.test/nl.gtaac.governor.GovernorInstrumentation | tee instrumentation.txt
+            adb logcat -d > android-logcat.txt
+            adb logcat -d -b crash | tee android-crash.txt
+            adb exec-out screencap -p > android-screen.png
             grep -q 'OK (' instrumentation.txt
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: android-test-results
-          path: instrumentation.txt
+          path: |
+            instrumentation.txt
+            android-logcat.txt
+            android-crash.txt
+            android-screen.png
+
