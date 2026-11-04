@@ -22,6 +22,8 @@ jobs:
       - name: SDK
         # Ubuntu images change; provision the SDK explicitly.
         uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
       - name: SDK packages
         run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
       - name: Privacycontrole
