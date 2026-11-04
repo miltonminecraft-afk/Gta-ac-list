@@ -49,6 +49,7 @@ jobs:
       - uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 26
+          target: google_apis
           arch: x86_64
           disable-animations: true
           script: |
@@ -68,4 +69,3 @@ jobs:
             android-logcat.txt
             android-crash.txt
             android-screen.png
-
