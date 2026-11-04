@@ -1,24 +1,29 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-04T01:00:04.000+01:00",
-  "updatedLabel": "4 november · 01:00",
+  "updatedAt": "2026-11-04T01:29:48.413+01:00",
+  "updatedLabel": "4 november · 01:29",
   "scope": "Actuele verbeteringen en oplevering; geen percentage van alle historische projectwerkzaamheden.",
-  "deltaLabel": "2 punten toegevoegd · 0 hele taken nieuw opgeleverd",
+  "deltaLabel": "0 hele taken nieuw opgeleverd · 1 deelcontrole geslaagd",
   "updates": [
     {
       "finished": false,
-      "title": "FPS-daling van circa 80 naar 47 gemeld",
-      "detail": "Doorgestuurd naar de hoofdchat voor een vergelijking onder gelijke omstandigheden. Oorzaak en herstel zijn nog niet bewezen."
+      "title": "Tunnelbestanden geëxporteerd en teruggelezen",
+      "detail": "Beeld en AC-/GTA-collision komen uit dezelfde bron. Alle 79 GTA-onderdelen slagen offline; maximaal 0,69 mm afwijking. Eén afgesproken deelcontrole erbij: tunnels 3/8 (38%) in plaats van 2/8 (25%)."
     },
     {
       "finished": false,
-      "title": "Head bobbing uitschakelen toegevoegd",
-      "detail": "Nieuwe camerataak na het huidige spiegelwerk; echte kijkbesturing en latere headsetbeweging behouden. Nu 11 actuele werkpakketten."
+      "title": "Tunnelmonden en aansluitingen verder uitgewerkt",
+      "detail": "De aanlopen sluiten in de bron op terrein en GTA-asfalt aan. 48 vlakke voertuigberekeningen slagen; volledige 3D-vrijheid, terreinopeningen en echte rijproeven blijven open."
     },
     {
       "finished": false,
-      "title": "Extra prestatiecontrole bij spiegels",
-      "detail": "Dezelfde 3 controles zijn bewezen; met de extra controle wordt dit 3/9 (33%) in plaats van 3/8 (38%). Dit is een scopewijziging, geen verlies van bewezen werk. Overige taakstanden zijn overgenomen van de vorige controle."
+      "title": "Spiegelhemel zichtbaar; kleur en prestaties nog open",
+      "detail": "De nieuwe proef toont hemel in de primaire preview. De hoofdchat vond verouderde belichtingsgegevens in de tweede-GPU-route. De FPS-vergelijking is door beweging onvolledig; spiegels blijven 3/9 (33%)."
+    },
+    {
+      "finished": false,
+      "title": "Gewone spelstart en definitieve mapbeelden nog open",
+      "detail": "De bureaubladknop wijst nog naar de eerder bewezen versie. Nieuwe spiegel- en kaartproeven zijn nog geen geïntegreerde oplevering. Geen hele taken nieuw opgeleverd."
     }
   ],
   "backlog": [
@@ -79,8 +84,8 @@
       "title": "Spiegels betrouwbaar en vloeiend",
       "owner": "Hoofdchat",
       "status": "active",
-      "current": "Beeldvolgorde en GPU-herstel zijn in beperkte proeven gecontroleerd. De ontbrekende hemel en kleur worden nu aangepakt. Gebruiker meldt circa 47 FPS tegenover eerder ongeveer 80; mogelijke regressie, nog niet vergelijkbaar gemeten.",
-      "next": "Kleur/hemel en beweging controleren; de gemelde FPS-daling onder dezelfde omstandigheden onderzoeken.",
+      "current": "Nieuwe proef toont hemel in de primaire spiegelpreview. Kleur is nog niet geaccepteerd; de hoofdchat onderzoekt verouderde belichtingsgegevens op de tweede GPU. De nieuwe FPS-vergelijking is onvolledig door beweging tijdens de proef.",
+      "next": "Actuele belichtingsgegevens correct verwerken en daarna kleur, beweging en FPS onder dezelfde omstandigheden controleren; bestaande werking behouden.",
       "checks": [
         {
           "label": "Vergelijkbare FPS-meting zonder framegeneratie vastgelegd",
@@ -125,8 +130,8 @@
       "title": "Twee tunnels voor vrachtwagens met oplegger",
       "owner": "Mapchat",
       "status": "active",
-      "current": "Een langer tracé en twee structurele conceptbuizen zijn gebouwd. De bestaande GTA-weg is ter plaatse steil; de aansluiting is nog niet uitgewerkt.",
-      "next": "Wegovergang en tunnelmonden uitwerken, daarna de echte voertuigruimte in 3D controleren.",
+      "current": "Twee tunnelbuizen met aanlopen zijn gebouwd en naar AC/GTA geëxporteerd. Alle 79 GTA-collisiononderdelen slagen offline. Terreinopeningen worden nog afgewerkt; volledige 3D-ruimte en in-game rijden zijn niet bewezen.",
+      "next": "Grond en zichtbare terreinlagen gericht vrijmaken, daarna hellingovergangen en volledige ruimte voor trekker met oplegger testen en integratie afstemmen.",
       "checks": [
         {
           "label": "Langer lengteprofiel onder het circuit doorgerekend",
@@ -146,7 +151,7 @@
         },
         {
           "label": "Gelijke zichtbare geometrie en GTA-/AC-collision geëxporteerd",
-          "state": "open"
+          "state": "done"
         },
         {
           "label": "Heen en terug gereden in de gecombineerde game",
@@ -369,7 +374,7 @@
       "title": "Alles samen in de normale spelstart",
       "owner": "Hoofdchat",
       "status": "waiting",
-      "current": "De gewone bureaubladknop wees bij de governorcontrole nog naar de eerder bewezen Y-versie. Nieuwe proeven zijn niet automatisch geleverd.",
+      "current": "Opnieuw gecontroleerd: de gewone bureaubladknop start de eerder bewezen Y-versie. Nieuwe spiegel- en kaartkandidaten zijn nog niet via deze knop geleverd.",
       "next": "De werkende nieuwe onderdelen in de actuele combinatie opnemen zodra de huidige taken klaar zijn.",
       "checks": [
         {
@@ -459,6 +464,33 @@
           "detail": "Dezelfde 3 controles zijn bewezen; met de extra controle wordt dit 3/9 (33%) in plaats van 3/8 (38%). Dit is een scopewijziging, geen verlies van bewezen werk. Overige taakstanden zijn overgenomen van de vorige controle."
         }
       ]
+    },
+    {
+      "updatedAt": "2026-11-04T01:29:48.413+01:00",
+      "deltaLabel": "0 hele taken nieuw opgeleverd · 1 deelcontrole geslaagd",
+      "updates": [
+        {
+          "finished": false,
+          "title": "Tunnelbestanden geëxporteerd en teruggelezen",
+          "detail": "Beeld en AC-/GTA-collision komen uit dezelfde bron. Alle 79 GTA-onderdelen slagen offline; maximaal 0,69 mm afwijking. Eén afgesproken deelcontrole erbij: tunnels 3/8 (38%) in plaats van 2/8 (25%)."
+        },
+        {
+          "finished": false,
+          "title": "Tunnelmonden en aansluitingen verder uitgewerkt",
+          "detail": "De aanlopen sluiten in de bron op terrein en GTA-asfalt aan. 48 vlakke voertuigberekeningen slagen; volledige 3D-vrijheid, terreinopeningen en echte rijproeven blijven open."
+        },
+        {
+          "finished": false,
+          "title": "Spiegelhemel zichtbaar; kleur en prestaties nog open",
+          "detail": "De nieuwe proef toont hemel in de primaire preview. De hoofdchat vond verouderde belichtingsgegevens in de tweede-GPU-route. De FPS-vergelijking is door beweging onvolledig; spiegels blijven 3/9 (33%)."
+        },
+        {
+          "finished": false,
+          "title": "Gewone spelstart en definitieve mapbeelden nog open",
+          "detail": "De bureaubladknop wijst nog naar de eerder bewezen versie. Nieuwe spiegel- en kaartproeven zijn nog geen geïntegreerde oplevering. Geen hele taken nieuw opgeleverd."
+        }
+      ]
     }
   ]
 }
+
