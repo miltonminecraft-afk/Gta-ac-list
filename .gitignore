@@ -7,3 +7,4 @@ local.properties
 *.pem
 node_modules/
 qa-output/
+runtime-local.json

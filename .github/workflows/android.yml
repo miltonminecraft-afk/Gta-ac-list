@@ -8,7 +8,7 @@ permissions:
   contents: read
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
@@ -20,6 +20,9 @@ jobs:
         with:
           gradle-version: '8.13'
       - name: SDK
+        # Ubuntu images change; provision the SDK explicitly.
+        uses: android-actions/setup-android@v3
+      - name: SDK packages
         run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
       - name: Privacycontrole
         run: python -m unittest discover -s tests -p '*_test.py'
